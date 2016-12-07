@@ -65,9 +65,6 @@ ontologyofspatialobject:desert
       rdfs:comment "desert.  a large area with little or no vegetation due to extreme environmental conditions"@en ;
       rdfs:subClassOf ontologyofspatialobject:Hypsographic .
 
-[]    a       owl:AllDisjointProperties ;
-      owl:members (ontologyofspatialobject:adminCode1 ontologyofspatialobject:adminCode2 ontologyofspatialobject:adminCode3 ontologyofspatialobject:adminCode4 ontologyofspatialobject:adminCode5 ontologyofspatialobject:adminName1 ontologyofspatialobject:adminName2 ontologyofspatialobject:adminName3 ontologyofspatialobject:adminName4 ontologyofspatialobject:adminName5 ontologyofspatialobject:language ontologyofspatialobject:population ontologyofspatialobject:typeRelation ontologyofspatialobject:wkt) .
-
 ontologyofspatialobject:equal
       a       owl:TransitiveProperty , owl:ObjectProperty , owl:SymmetricProperty , owl:ReflexiveProperty ;
       rdfs:comment """Two geometries are equal if they occupy the same space.
@@ -231,6 +228,9 @@ ontologyofspatialobject:estuary
       rdfs:comment "estuary.  a funnel-shaped stream mouth or embayment where fresh water mixes with sea water under tidal influences"@en ;
       rdfs:subClassOf ontologyofspatialobject:Hydrographic .
 
+[]    a       owl:AllDisjointProperties ;
+      owl:members (ontologyofspatialobject:adminCode1 ontologyofspatialobject:adminCode2 ontologyofspatialobject:adminCode3 ontologyofspatialobject:adminCode4 ontologyofspatialobject:adminCode5 ontologyofspatialobject:adminName1 ontologyofspatialobject:adminName2 ontologyofspatialobject:adminName3 ontologyofspatialobject:adminName4 ontologyofspatialobject:adminName5 ontologyofspatialobject:language ontologyofspatialobject:population ontologyofspatialobject:typeRelation ontologyofspatialobject:wkt) .
+
 ontologyofspatialobject:stable
       a       owl:Class ;
       rdfs:comment "stable.  a building for the shelter and feeding of farm animals, especially horses"@en ;
@@ -307,15 +307,15 @@ ontologyofspatialobject:wadies
 owl:preferredNamespacePrefix
       a       owl:AnnotationProperty .
 
-ontologyofspatialobject:theater
-      a       owl:Class ;
-      rdfs:comment "theater.  A building, room, or outdoor structure for the presentation of plays, films, or other dramatic performances"@en ;
-      rdfs:subClassOf ontologyofspatialobject:Spot .
-
 ontologyofspatialobject:wadi-mouth
       a       owl:Class ;
       rdfs:comment "wadi mouth.  the lower terminus of a wadi where it widens into an adjoining floodplain, depression, or waterbody"@en ;
       rdfs:subClassOf ontologyofspatialobject:Hydrographic .
+
+ontologyofspatialobject:theater
+      a       owl:Class ;
+      rdfs:comment "theater.  A building, room, or outdoor structure for the presentation of plays, films, or other dramatic performances"@en ;
+      rdfs:subClassOf ontologyofspatialobject:Spot .
 
 ontologyofspatialobject:research-institute
       a       owl:Class ;
@@ -414,9 +414,6 @@ ontologyofspatialobject:oasis--es-
       rdfs:comment "oasis(-es).  an area in a desert made productive by the availability of water"@en ;
       rdfs:subClassOf ontologyofspatialobject:Area .
 
-[]    a       owl:AllDisjointProperties ;
-      owl:members (ontologyofspatialobject:adminName4 ontologyofspatialobject:elevation ontologyofspatialobject:language ontologyofspatialobject:timezone ontologyofspatialobject:title ontologyofspatialobject:typeRelation ontologyofspatialobject:wikipediaUrl ontologyofspatialobject:wkt) .
-
 ontologyofspatialobject:pinnacle
       a       owl:Class ;
       rdfs:comment "pinnacle.  a high tower or spire-shaped pillar of rock or coral, alone or cresting a summit"@en ;
@@ -480,6 +477,9 @@ ontologyofspatialobject:limekiln
       rdfs:comment "limekiln.  a furnace in which limestone is reduced to lime"@en ;
       rdfs:subClassOf ontologyofspatialobject:Spot .
 
+[]    a       owl:AllDisjointProperties ;
+      owl:members (ontologyofspatialobject:adminName3 ontologyofspatialobject:elevation ontologyofspatialobject:rank ontologyofspatialobject:thumbnailImg ontologyofspatialobject:timezone ontologyofspatialobject:wikipediaUrl ontologyofspatialobject:wkt) .
+
 rdfs:comment
       rdfs:comment "This ontology is designed to model any geographical area."@en .
 
@@ -489,6 +489,9 @@ ontologyofspatialobject:adminCode4
       rdfs:domain ontologyofspatialobject:SpatialObject ;
       rdfs:range xsd:string ;
       rdfs:subPropertyOf ontologyofspatialobject:gonameDataProperty .
+
+[]    ontologyofspatialobject:license
+              "http://purl.org/NET/rdflicense/allrightsreserved" .
 
 ontologyofspatialobject:GeonameConcept
       a       owl:Class ;
@@ -562,64 +565,6 @@ ontologyofspatialobject:ditch-mouth-s-
       rdfs:comment "ditch mouth(s).  an area where a drainage ditch enters a lagoon, lake or bay"@en ;
       rdfs:subClassOf ontologyofspatialobject:Hydrographic .
 
-[]    a       swrl:Imp ;
-      swrl:body
-              [ a       swrl:AtomList ;
-                rdf:first
-                        [ a       swrl:ClassAtom ;
-                          swrl:argument1 <urn:swrl#x> ;
-                          swrl:classPredicate ontologyofspatialobject:SpatialObject
-                        ] ;
-                rdf:rest
-                        [ a       swrl:AtomList ;
-                          rdf:first
-                                  [ a       swrl:ClassAtom ;
-                                    swrl:argument1 <urn:swrl#y> ;
-                                    swrl:classPredicate ontologyofspatialobject:SpatialObject
-                                  ] ;
-                          rdf:rest
-                                  [ a       swrl:AtomList ;
-                                    rdf:first
-                                            [ a       swrl:DatavaluedPropertyAtom ;
-                                              swrl:argument1 <urn:swrl#x> ;
-                                              swrl:argument2 <urn:swrl#latitudx> ;
-                                              swrl:propertyPredicate
-                                                      ontologyofspatialobject:latitude
-                                            ] ;
-                                    rdf:rest
-                                            [ a       swrl:AtomList ;
-                                              rdf:first
-                                                      [ a       swrl:DatavaluedPropertyAtom ;
-                                                        swrl:argument1 <urn:swrl#y> ;
-                                                        swrl:argument2 <urn:swrl#latitudy> ;
-                                                        swrl:propertyPredicate
-                                                                ontologyofspatialobject:latitude
-                                                      ] ;
-                                              rdf:rest
-                                                      [ a       swrl:AtomList ;
-                                                        rdf:first
-                                                                [ a       swrl:BuiltinAtom ;
-                                                                  swrl:arguments (<urn:swrl#latitudy> <urn:swrl#latitudx>) ;
-                                                                  swrl:builtin swrlb:greaterThan
-                                                                ] ;
-                                                        rdf:rest ()
-                                                      ]
-                                            ]
-                                  ]
-                        ]
-              ] ;
-      swrl:head
-              [ a       swrl:AtomList ;
-                rdf:first
-                        [ a       swrl:IndividualPropertyAtom ;
-                          swrl:argument1 <urn:swrl#y> ;
-                          swrl:argument2 <urn:swrl#x> ;
-                          swrl:propertyPredicate
-                                  ontologyofspatialobject:isNorthOf
-                        ] ;
-                rdf:rest ()
-              ] .
-
 ontologyofspatialobject:fifth-order-administrative-division
       a       owl:Class ;
       rdfs:comment "fifth-order administrative division.  a subdivision of a fourth-order administrative division"@en ;
@@ -678,6 +623,52 @@ ontologyofspatialobject:arctic-land
       a       owl:Class ;
       rdfs:comment "arctic land.  a tract of land in the Arctic"@en ;
       rdfs:subClassOf ontologyofspatialobject:Area .
+
+[]    a       swrl:Imp ;
+      swrl:body
+              [ a       swrl:AtomList ;
+                rdf:first
+                        [ a       swrl:BuiltinAtom ;
+                          swrl:arguments
+                                  [ a       rdf:List ;
+                                    rdf:first <urn:swrl#latitud> ;
+                                    rdf:rest
+                                            [ a       rdf:List ;
+                                              rdf:first 0 ;
+                                              rdf:rest ()
+                                            ]
+                                  ] ;
+                          swrl:builtin swrlb:lessThan
+                        ] ;
+                rdf:rest
+                        [ a       swrl:AtomList ;
+                          rdf:first
+                                  [ a       swrl:DatavaluedPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#x> ;
+                                    swrl:argument2 <urn:swrl#latitud> ;
+                                    swrl:propertyPredicate
+                                            ontologyofspatialobject:latitude
+                                  ] ;
+                          rdf:rest
+                                  [ a       swrl:AtomList ;
+                                    rdf:first
+                                            [ a       swrl:ClassAtom ;
+                                              swrl:argument1 <urn:swrl#x> ;
+                                              swrl:classPredicate ontologyofspatialobject:SpatialObject
+                                            ] ;
+                                    rdf:rest ()
+                                  ]
+                        ]
+              ] ;
+      swrl:head
+              [ a       swrl:AtomList ;
+                rdf:first
+                        [ a       swrl:ClassAtom ;
+                          swrl:argument1 <urn:swrl#x> ;
+                          swrl:classPredicate ontologyofspatialobject:SurtHemisphere
+                        ] ;
+                rdf:rest ()
+              ] .
 
 ontologyofspatialobject:beach
       a       owl:Class ;
@@ -762,16 +753,10 @@ ontologyofspatialobject:language-school
       rdfs:comment "language school.  Language Schools & Institutions"@en ;
       rdfs:subClassOf ontologyofspatialobject:Spot .
 
-[]    a       owl:AllDisjointProperties ;
-      owl:members (ontologyofspatialobject:adminCode1 ontologyofspatialobject:adminCode2 ontologyofspatialobject:adminCode3 ontologyofspatialobject:adminCode4 ontologyofspatialobject:adminCode5 ontologyofspatialobject:adminName1 ontologyofspatialobject:adminName2 ontologyofspatialobject:alternateNames ontologyofspatialobject:continentCode ontologyofspatialobject:countryCode ontologyofspatialobject:idOSM ontologyofspatialobject:language ontologyofspatialobject:latitude ontologyofspatialobject:longitude ontologyofspatialobject:timezone) .
-
 ontologyofspatialobject:amusement-park
       a       owl:Class ;
       rdfs:comment "amusement park.  Amusement Park are theme parks, adventure parks offering entertainment, similar to funfairs but with a fix location"@en ;
       rdfs:subClassOf ontologyofspatialobject:Area .
-
-[]    a       owl:AllDisjointProperties ;
-      owl:members (ontologyofspatialobject:adminName5 ontologyofspatialobject:elevation ontologyofspatialobject:language ontologyofspatialobject:latitude ontologyofspatialobject:longitude ontologyofspatialobject:rank ontologyofspatialobject:summary ontologyofspatialobject:thumbnailImg ontologyofspatialobject:wikipediaUrl ontologyofspatialobject:wkt) .
 
 ontologyofspatialobject:creators
       a       owl:AnnotationProperty .
@@ -827,9 +812,6 @@ ontologyofspatialobject:oil-well
       a       owl:Class ;
       rdfs:comment "oil well.  a well from which oil may be pumped"@en ;
       rdfs:subClassOf ontologyofspatialobject:Spot .
-
-[]    ontologyofspatialobject:license
-              "http://purl.org/NET/rdflicense/allrightsreserved" .
 
 ontologyofspatialobject:pond
       a       owl:Class ;
@@ -921,6 +903,9 @@ ontologyofspatialobject:idOSM
       rdfs:domain ontologyofspatialobject:SpatialObject ;
       rdfs:range xsd:unsignedLong ;
       rdfs:subPropertyOf ontologyofspatialobject:osmDataProperty .
+
+[]    a       owl:AllDisjointProperties ;
+      owl:members (ontologyofspatialobject:adminCode1 ontologyofspatialobject:adminCode2 ontologyofspatialobject:adminCode3 ontologyofspatialobject:adminCode4 ontologyofspatialobject:adminCode5 ontologyofspatialobject:adminName1 ontologyofspatialobject:adminName2 ontologyofspatialobject:alternateNames ontologyofspatialobject:continentCode ontologyofspatialobject:countryCode ontologyofspatialobject:idOSM ontologyofspatialobject:language ontologyofspatialobject:latitude ontologyofspatialobject:longitude ontologyofspatialobject:timezone) .
 
 ontologyofspatialobject:road-cut
       a       owl:Class ;
@@ -1231,6 +1216,9 @@ ontologyofspatialobject:airbase
       rdfs:comment "airbase.  an area used to store supplies, provide barracks for air force personnel, hangars and runways for aircraft, and from which operations are initiated"@en ;
       rdfs:subClassOf ontologyofspatialobject:Spot .
 
+[]    a       owl:AllDisjointProperties ;
+      owl:members (ontologyofspatialobject:adminName4 ontologyofspatialobject:elevation ontologyofspatialobject:language ontologyofspatialobject:timezone ontologyofspatialobject:title ontologyofspatialobject:typeRelation ontologyofspatialobject:wikipediaUrl ontologyofspatialobject:wkt) .
+
 ontologyofspatialobject:oil-palm-plantation
       a       owl:Class ;
       rdfs:comment "oil palm plantation.  an estate specializing in the cultivation of oil palm trees"@en ;
@@ -1335,52 +1323,6 @@ ontologyofspatialobject:lake-channel-s-
       rdfs:comment "lake channel(s).  that part of a lake having water deep enough for navigation between islands, shoals, etc."@en ;
       rdfs:subClassOf ontologyofspatialobject:Hydrographic .
 
-[]    a       swrl:Imp ;
-      swrl:body
-              [ a       swrl:AtomList ;
-                rdf:first
-                        [ a       swrl:BuiltinAtom ;
-                          swrl:arguments
-                                  [ a       rdf:List ;
-                                    rdf:first <urn:swrl#latitud> ;
-                                    rdf:rest
-                                            [ a       rdf:List ;
-                                              rdf:first 0 ;
-                                              rdf:rest ()
-                                            ]
-                                  ] ;
-                          swrl:builtin swrlb:greaterThan
-                        ] ;
-                rdf:rest
-                        [ a       swrl:AtomList ;
-                          rdf:first
-                                  [ a       swrl:DatavaluedPropertyAtom ;
-                                    swrl:argument1 <urn:swrl#x> ;
-                                    swrl:argument2 <urn:swrl#latitud> ;
-                                    swrl:propertyPredicate
-                                            ontologyofspatialobject:latitude
-                                  ] ;
-                          rdf:rest
-                                  [ a       swrl:AtomList ;
-                                    rdf:first
-                                            [ a       swrl:ClassAtom ;
-                                              swrl:argument1 <urn:swrl#x> ;
-                                              swrl:classPredicate ontologyofspatialobject:SpatialObject
-                                            ] ;
-                                    rdf:rest ()
-                                  ]
-                        ]
-              ] ;
-      swrl:head
-              [ a       swrl:AtomList ;
-                rdf:first
-                        [ a       swrl:ClassAtom ;
-                          swrl:argument1 <urn:swrl#x> ;
-                          swrl:classPredicate ontologyofspatialobject:NortHemisphere
-                        ] ;
-                rdf:rest ()
-              ] .
-
 ontologyofspatialobject:historical-capital-of-a-political-entity
       a       owl:Class ;
       rdfs:comment "historical capital of a political entity.  a former capital of a political entity"@en ;
@@ -1466,6 +1408,52 @@ ontologyofspatialobject:lost-river
       a       owl:Class ;
       rdfs:comment "lost river.  a surface stream that disappears into an underground channel, or dries up in an arid area"@en ;
       rdfs:subClassOf ontologyofspatialobject:Hydrographic .
+
+[]    a       swrl:Imp ;
+      swrl:body
+              [ a       swrl:AtomList ;
+                rdf:first
+                        [ a       swrl:BuiltinAtom ;
+                          swrl:arguments
+                                  [ a       rdf:List ;
+                                    rdf:first <urn:swrl#latitud> ;
+                                    rdf:rest
+                                            [ a       rdf:List ;
+                                              rdf:first 0 ;
+                                              rdf:rest ()
+                                            ]
+                                  ] ;
+                          swrl:builtin swrlb:greaterThan
+                        ] ;
+                rdf:rest
+                        [ a       swrl:AtomList ;
+                          rdf:first
+                                  [ a       swrl:DatavaluedPropertyAtom ;
+                                    swrl:argument1 <urn:swrl#x> ;
+                                    swrl:argument2 <urn:swrl#latitud> ;
+                                    swrl:propertyPredicate
+                                            ontologyofspatialobject:latitude
+                                  ] ;
+                          rdf:rest
+                                  [ a       swrl:AtomList ;
+                                    rdf:first
+                                            [ a       swrl:ClassAtom ;
+                                              swrl:argument1 <urn:swrl#x> ;
+                                              swrl:classPredicate ontologyofspatialobject:SpatialObject
+                                            ] ;
+                                    rdf:rest ()
+                                  ]
+                        ]
+              ] ;
+      swrl:head
+              [ a       swrl:AtomList ;
+                rdf:first
+                        [ a       swrl:ClassAtom ;
+                          swrl:argument1 <urn:swrl#x> ;
+                          swrl:classPredicate ontologyofspatialobject:NortHemisphere
+                        ] ;
+                rdf:rest ()
+              ] .
 
 ontologyofspatialobject:business-center
       a       owl:Class ;
@@ -1718,6 +1706,9 @@ ontologyofspatialobject:area
       rdfs:comment "area.  a tract of land without homogeneous character or boundaries"@en ;
       rdfs:subClassOf ontologyofspatialobject:Area .
 
+[]    a       owl:AllDisjointProperties ;
+      owl:members (ontologyofspatialobject:adminName5 ontologyofspatialobject:elevation ontologyofspatialobject:language ontologyofspatialobject:latitude ontologyofspatialobject:longitude ontologyofspatialobject:rank ontologyofspatialobject:summary ontologyofspatialobject:thumbnailImg ontologyofspatialobject:wikipediaUrl ontologyofspatialobject:wkt) .
+
 ontologyofspatialobject:mound-s-
       a       owl:Class ;
       rdfs:comment "mound(s).  a low, isolated, rounded hill"@en ;
@@ -1831,9 +1822,6 @@ ontologyofspatialobject:dike
       rdfs:comment "dike.  an earth or stone embankment usually constructed for flood or stream control"@en ;
       rdfs:subClassOf ontologyofspatialobject:Spot .
 
-[]    a       owl:AllDisjointProperties ;
-      owl:members (ontologyofspatialobject:featureCode ontologyofspatialobject:featureCodeName ontologyofspatialobject:geoNameId ontologyofspatialobject:latitude ontologyofspatialobject:longitude ontologyofspatialobject:timezone ontologyofspatialobject:wkt) .
-
 ontologyofspatialobject:historical-second-order-administrative-division
       a       owl:Class ;
       rdfs:comment "historical second-order administrative division.  a former second-order administrative division"@en ;
@@ -1941,6 +1929,64 @@ ontologyofspatialobject:portage
       a       owl:Class ;
       rdfs:comment "portage.  a place where boats, goods, etc., are carried overland between navigable waters"@en ;
       rdfs:subClassOf ontologyofspatialobject:Road .
+
+[]    a       swrl:Imp ;
+      swrl:body
+              [ a       swrl:AtomList ;
+                rdf:first
+                        [ a       swrl:ClassAtom ;
+                          swrl:argument1 <urn:swrl#x> ;
+                          swrl:classPredicate ontologyofspatialobject:SpatialObject
+                        ] ;
+                rdf:rest
+                        [ a       swrl:AtomList ;
+                          rdf:first
+                                  [ a       swrl:ClassAtom ;
+                                    swrl:argument1 <urn:swrl#y> ;
+                                    swrl:classPredicate ontologyofspatialobject:SpatialObject
+                                  ] ;
+                          rdf:rest
+                                  [ a       swrl:AtomList ;
+                                    rdf:first
+                                            [ a       swrl:DatavaluedPropertyAtom ;
+                                              swrl:argument1 <urn:swrl#x> ;
+                                              swrl:argument2 <urn:swrl#latitudx> ;
+                                              swrl:propertyPredicate
+                                                      ontologyofspatialobject:latitude
+                                            ] ;
+                                    rdf:rest
+                                            [ a       swrl:AtomList ;
+                                              rdf:first
+                                                      [ a       swrl:DatavaluedPropertyAtom ;
+                                                        swrl:argument1 <urn:swrl#y> ;
+                                                        swrl:argument2 <urn:swrl#latitudy> ;
+                                                        swrl:propertyPredicate
+                                                                ontologyofspatialobject:latitude
+                                                      ] ;
+                                              rdf:rest
+                                                      [ a       swrl:AtomList ;
+                                                        rdf:first
+                                                                [ a       swrl:BuiltinAtom ;
+                                                                  swrl:arguments (<urn:swrl#latitudy> <urn:swrl#latitudx>) ;
+                                                                  swrl:builtin swrlb:greaterThan
+                                                                ] ;
+                                                        rdf:rest ()
+                                                      ]
+                                            ]
+                                  ]
+                        ]
+              ] ;
+      swrl:head
+              [ a       swrl:AtomList ;
+                rdf:first
+                        [ a       swrl:IndividualPropertyAtom ;
+                          swrl:argument1 <urn:swrl#y> ;
+                          swrl:argument2 <urn:swrl#x> ;
+                          swrl:propertyPredicate
+                                  ontologyofspatialobject:isNorthOf
+                        ] ;
+                rdf:rest ()
+              ] .
 
 ontologyofspatialobject:city
       a       owl:Class ;
@@ -2219,9 +2265,6 @@ ontologyofspatialobject:hospital
       rdfs:comment "hospital.  a building in which sick or injured, especially those confined to bed, are medically treated"@en ;
       rdfs:subClassOf ontologyofspatialobject:Spot .
 
-[]    a       owl:AllDisjointProperties ;
-      owl:members (ontologyofspatialobject:adminCode1 ontologyofspatialobject:adminCode2 ontologyofspatialobject:adminCode3 ontologyofspatialobject:adminCode4 ontologyofspatialobject:adminCode5 ontologyofspatialobject:adminName1 ontologyofspatialobject:boundingBox ontologyofspatialobject:taqs ontologyofspatialobject:typeRelation ontologyofspatialobject:wikipediaUrl ontologyofspatialobject:wkt) .
-
 ontologyofspatialobject:gravel-area
       a       owl:Class ;
       rdfs:comment "gravel area.  an area covered with gravel"@en ;
@@ -2358,6 +2401,9 @@ ontologyofspatialobject:radio-station
       a       owl:Class ;
       rdfs:comment "radio station.  a facility for producing and transmitting information by radio waves"@en ;
       rdfs:subClassOf ontologyofspatialobject:Spot .
+
+[]    a       owl:AllDisjointProperties ;
+      owl:members (ontologyofspatialobject:countryName ontologyofspatialobject:elevation ontologyofspatialobject:feature ontologyofspatialobject:featureClass ontologyofspatialobject:featureClassName ontologyofspatialobject:featureCodeName ontologyofspatialobject:language ontologyofspatialobject:name ontologyofspatialobject:rank ontologyofspatialobject:style ontologyofspatialobject:summary ontologyofspatialobject:taqs ontologyofspatialobject:thumbnailImg ontologyofspatialobject:timezone ontologyofspatialobject:title ontologyofspatialobject:type ontologyofspatialobject:typeRelation ontologyofspatialobject:wikipediaUrl ontologyofspatialobject:wkt) .
 
 ontologyofspatialobject:pyramid
       a       owl:Class ;
@@ -2603,9 +2649,6 @@ ontologyofspatialobject:tidal-flat-s-
       rdfs:comment "tidal flat(s).  a large flat area of mud or sand attached to the shore and alternately covered and uncovered by the tide"@en ;
       rdfs:subClassOf ontologyofspatialobject:Hydrographic .
 
-[]    a       owl:AllDisjointProperties ;
-      owl:members (ontologyofspatialobject:alternateNames ontologyofspatialobject:boundingBox ontologyofspatialobject:elevation) .
-
 ontologyofspatialobject:asylum
       a       owl:Class ;
       rdfs:comment "asylum.  a facility where the insane are cared for and protected"@en ;
@@ -2693,6 +2736,9 @@ ontologyofspatialobject:stream-bend
       a       owl:Class ;
       rdfs:comment "stream bend.  a conspicuously curved or bent segment of a stream"@en ;
       rdfs:subClassOf ontologyofspatialobject:Hydrographic .
+
+[]    a       owl:AllDisjointProperties ;
+      owl:members (ontologyofspatialobject:alternateNames ontologyofspatialobject:boundingBox ontologyofspatialobject:elevation) .
 
 ontologyofspatialobject:seat-of-a-third-order-administrative-division
       a       owl:Class ;
@@ -2811,9 +2857,6 @@ ontologyofspatialobject:mining-area
       a       owl:Class ;
       rdfs:comment "mining area.  an area of mine sites where minerals and ores are extracted"@en ;
       rdfs:subClassOf ontologyofspatialobject:Area .
-
-[]    a       owl:AllDisjointProperties ;
-      owl:members (ontologyofspatialobject:countryName ontologyofspatialobject:elevation ontologyofspatialobject:feature ontologyofspatialobject:featureClass ontologyofspatialobject:featureClassName ontologyofspatialobject:featureCodeName ontologyofspatialobject:language ontologyofspatialobject:name ontologyofspatialobject:rank ontologyofspatialobject:style ontologyofspatialobject:summary ontologyofspatialobject:taqs ontologyofspatialobject:thumbnailImg ontologyofspatialobject:timezone ontologyofspatialobject:title ontologyofspatialobject:type ontologyofspatialobject:typeRelation ontologyofspatialobject:wikipediaUrl ontologyofspatialobject:wkt) .
 
 ontologyofspatialobject:sewage-treatment-plant
       a       owl:Class ;
@@ -3095,6 +3138,9 @@ ontologyofspatialobject:shoals
       rdfs:comment "shoals.  hazards to surface navigation composed of unconsolidated material"@en ;
       rdfs:subClassOf ontologyofspatialobject:Undersea .
 
+[]    a       owl:AllDisjointProperties ;
+      owl:members (ontologyofspatialobject:featureCode ontologyofspatialobject:featureCodeName ontologyofspatialobject:geoNameId ontologyofspatialobject:latitude ontologyofspatialobject:longitude ontologyofspatialobject:timezone ontologyofspatialobject:wkt) .
+
 ontologyofspatialobject:fourth-order-administrative-division
       a       owl:Class ;
       rdfs:comment "fourth-order administrative division.  a subdivision of a third-order administrative division"@en ;
@@ -3114,52 +3160,6 @@ ontologyofspatialobject:road-tunnel
       a       owl:Class ;
       rdfs:comment "road tunnel.  a tunnel through which a road passes"@en ;
       rdfs:subClassOf ontologyofspatialobject:Road .
-
-[]    a       swrl:Imp ;
-      swrl:body
-              [ a       swrl:AtomList ;
-                rdf:first
-                        [ a       swrl:BuiltinAtom ;
-                          swrl:arguments
-                                  [ a       rdf:List ;
-                                    rdf:first <urn:swrl#latitud> ;
-                                    rdf:rest
-                                            [ a       rdf:List ;
-                                              rdf:first 0 ;
-                                              rdf:rest ()
-                                            ]
-                                  ] ;
-                          swrl:builtin swrlb:lessThan
-                        ] ;
-                rdf:rest
-                        [ a       swrl:AtomList ;
-                          rdf:first
-                                  [ a       swrl:DatavaluedPropertyAtom ;
-                                    swrl:argument1 <urn:swrl#x> ;
-                                    swrl:argument2 <urn:swrl#latitud> ;
-                                    swrl:propertyPredicate
-                                            ontologyofspatialobject:latitude
-                                  ] ;
-                          rdf:rest
-                                  [ a       swrl:AtomList ;
-                                    rdf:first
-                                            [ a       swrl:ClassAtom ;
-                                              swrl:argument1 <urn:swrl#x> ;
-                                              swrl:classPredicate ontologyofspatialobject:SpatialObject
-                                            ] ;
-                                    rdf:rest ()
-                                  ]
-                        ]
-              ] ;
-      swrl:head
-              [ a       swrl:AtomList ;
-                rdf:first
-                        [ a       swrl:ClassAtom ;
-                          swrl:argument1 <urn:swrl#x> ;
-                          swrl:classPredicate ontologyofspatialobject:SurtHemisphere
-                        ] ;
-                rdf:rest ()
-              ] .
 
 ontologyofspatialobject:mesa
       a       owl:Class ;
@@ -3647,9 +3647,6 @@ ontologyofspatialobject:saddle
       rdfs:comment "saddle.  a broad, open pass crossing a ridge or between hills or mountains"@en , "saddle.  a low part, resembling in shape a saddle, in a ridge or between contiguous seamounts"@en ;
       rdfs:subClassOf ontologyofspatialobject:Hypsographic , ontologyofspatialobject:Undersea .
 
-[]    a       owl:AllDisjointProperties ;
-      owl:members (ontologyofspatialobject:adminName3 ontologyofspatialobject:elevation ontologyofspatialobject:rank ontologyofspatialobject:thumbnailImg ontologyofspatialobject:timezone ontologyofspatialobject:wikipediaUrl ontologyofspatialobject:wkt) .
-
 ontologyofspatialobject:forest-reserve
       a       owl:Class ;
       rdfs:comment "forest reserve.  a forested area set aside for preservation or controlled use"@en ;
@@ -3724,6 +3721,9 @@ ontologyofspatialobject:nature-reserve
       a       owl:Class ;
       rdfs:comment "nature reserve.  an area reserved for the maintenance of a natural habitat"@en ;
       rdfs:subClassOf ontologyofspatialobject:Area .
+
+[]    a       owl:AllDisjointProperties ;
+      owl:members (ontologyofspatialobject:adminCode1 ontologyofspatialobject:adminCode2 ontologyofspatialobject:adminCode3 ontologyofspatialobject:adminCode4 ontologyofspatialobject:adminCode5 ontologyofspatialobject:adminName1 ontologyofspatialobject:boundingBox ontologyofspatialobject:taqs ontologyofspatialobject:typeRelation ontologyofspatialobject:wikipediaUrl ontologyofspatialobject:wkt) .
 
 ontologyofspatialobject:post-office
       a       owl:Class ;
