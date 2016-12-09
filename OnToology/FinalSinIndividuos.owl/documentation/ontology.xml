@@ -12,6 +12,10 @@
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Vegetation"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:rest rdf:nodeID="A1"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#weir-s-">
     <rdfs:comment xml:lang="en">weir(s).  a small dam in a stream, designed to raise the water level or to divert stream flow through a desired channel</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -37,10 +41,19 @@
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A3"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode5"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#refugee-camp">
     <rdfs:comment xml:lang="en">refugee camp.  a camp used by refugees</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <swrl:body rdf:nodeID="A5"/>
+    <swrl:head rdf:nodeID="A6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-ponds">
     <rdfs:comment xml:lang="en">intermittent ponds.  </rdfs:comment>
@@ -54,11 +67,6 @@
     <rdfs:comment xml:lang="en">style</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A0">
-    <swrl:argument1 rdf:resource="urn:swrl#y"/>
-    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cairn">
     <rdfs:comment xml:lang="en">cairn.  a heap of stones erected as a landmark or for other purposes</rdfs:comment>
@@ -83,10 +91,6 @@
     <rdfs:comment xml:lang="en">Two geometries are equal if they occupy the same space.
 
 http://esri.github.io/geometry-api-java/doc/Equals.html</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
-    <rdf:rest rdf:nodeID="A2"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode2"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-pipeline">
     <rdfs:comment xml:lang="en">oil pipeline.  a pipeline used for transporting oil</rdfs:comment>
@@ -135,6 +139,10 @@ http://esri.github.io/geometry-api-java/doc/Within.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A7"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#feature"/>
+  </rdf:Description>
   <rdf:Description rdf:about="urn:swrl#latitudx">
     <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
   </rdf:Description>
@@ -166,6 +174,10 @@ http://esri.github.io/geometry-api-java/doc/Within.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:nodeID="A8"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mountain">
     <rdfs:comment xml:lang="en">mountain.  an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more</rdfs:comment>
     <rdfs:comment xml:lang="en">mountain.  a well-delineated subdivision of a large and complex positive feature</rdfs:comment>
@@ -183,19 +195,14 @@ http://esri.github.io/geometry-api-java/doc/Within.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="urn:swrl#latitudx"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ledge">
     <rdfs:comment xml:lang="en">ledge.  a rocky projection or outcrop, commonly linear and near shore</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A2">
-    <rdf:rest rdf:nodeID="A3"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode3"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A4">
-    <rdf:rest rdf:nodeID="A5"/>
-    <rdf:first rdf:nodeID="A0"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mud-flat-s-">
     <rdfs:comment xml:lang="en">mud flat(s).  a relatively level area of mud either between high and low tide lines, or subject to flooding</rdfs:comment>
@@ -211,6 +218,10 @@ http://esri.github.io/geometry-api-java/doc/Within.html</rdfs:comment>
     <rdfs:comment xml:lang="en">bush(es).  a small clump of conspicuous bushes in an otherwise bare area</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Vegetation"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <owl:members rdf:nodeID="A11"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#title">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -235,10 +246,19 @@ http://esri.github.io/geometry-api-java/doc/Within.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <swrl:argument1 rdf:resource="urn:swrl#x"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SurtHemisphere"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fossilized-forest">
     <rdfs:comment xml:lang="en">fossilized forest.  a forest fossilized by geologic processes and now exposed at the earth's surface</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Vegetation"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <rdf:rest rdf:nodeID="A14"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode3"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reservoir-s-">
     <rdfs:comment xml:lang="en">reservoir(s).  an artificial pond or lake</rdfs:comment>
@@ -254,10 +274,6 @@ http://esri.github.io/geometry-api-java/doc/Within.html</rdfs:comment>
     <rdfs:comment xml:lang="en">estuary.  a funnel-shaped stream mouth or embayment where fresh water mixes with sea water under tidal influences</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A6">
-    <owl:members rdf:nodeID="A7"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#stable">
     <rdfs:comment xml:lang="en">stable.  a building for the shelter and feeding of farm animals, especially horses</rdfs:comment>
@@ -312,10 +328,19 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:rest rdf:nodeID="A0"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#countryName"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#common">
     <rdfs:comment xml:lang="en">common.  a park or pasture for community use</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:first rdf:nodeID="A12"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#water-mill">
     <rdfs:comment xml:lang="en">water mill.  a mill powered by running water</rdfs:comment>
@@ -327,9 +352,9 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A7">
-    <rdf:rest rdf:nodeID="A1"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode1"/>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:rest rdf:nodeID="A2"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode4"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#waterworks">
     <rdfs:comment xml:lang="en">waterworks.  a facility for supplying potable water through a water source and a system of pumps and filtration beds</rdfs:comment>
@@ -344,14 +369,14 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#preferredNamespacePrefix">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wadi-mouth">
-    <rdfs:comment xml:lang="en">wadi mouth.  the lower terminus of a wadi where it widens into an adjoining floodplain, depression, or waterbody</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#theater">
     <rdfs:comment xml:lang="en">theater.  A building, room, or outdoor structure for the presentation of plays, films, or other dramatic performances</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wadi-mouth">
+    <rdfs:comment xml:lang="en">wadi mouth.  the lower terminus of a wadi where it widens into an adjoining floodplain, depression, or waterbody</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#research-institute">
@@ -377,14 +402,19 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#GeonameConcept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:rest rdf:nodeID="A16"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureCodeName"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <rdf:first rdf:nodeID="A18"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#plain">
     <rdfs:comment xml:lang="en">plain.  a flat, gently sloping or nearly level region</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A8">
-    <rdf:rest rdf:nodeID="A9"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boundingBox"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#quay">
     <rdfs:comment xml:lang="en">quay.  a structure of solid construction along a shore or bank which provides berthing for ships and which generally provides cargo handling facilities</rdfs:comment>
@@ -406,6 +436,10 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <rdf:rest rdf:nodeID="A19"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#agricultural-facility">
     <rdfs:comment xml:lang="en">agricultural facility.  a building and/or tract of land used for improving agriculture</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -421,16 +455,6 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A9">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A10">
-    <swrl:argument1 rdf:resource="urn:swrl#x"/>
-    <swrl:argument2 rdf:resource="urn:swrl#latitud"/>
-    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gate">
     <rdfs:comment xml:lang="en">gate.  a controlled access entrance or exit</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -442,14 +466,18 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A11">
-    <rdf:rest rdf:nodeID="A12"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl"/>
+  <rdf:Description rdf:nodeID="A20">
+    <rdf:rest rdf:nodeID="A13"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode2"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wadi-junction">
     <rdfs:comment xml:lang="en">wadi junction.  a place where two or more wadies join</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:nodeID="A21"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureClass"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hunting-reserve">
     <rdfs:comment xml:lang="en">hunting reserve.  a tract of land used primarily for hunting</rdfs:comment>
@@ -461,10 +489,9 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A13">
-    <rdf:rest rdf:nodeID="A14"/>
-    <rdf:first rdf:nodeID="A10"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:rest rdf:nodeID="A9"/>
+    <rdf:first rdf:resource="urn:swrl#latitudy"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#logging-camp">
     <rdfs:comment xml:lang="en">logging camp.  a camp used by loggers</rdfs:comment>
@@ -476,9 +503,9 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A12">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:rest rdf:nodeID="A15"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureClassName"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pinnacle">
     <rdfs:comment xml:lang="en">pinnacle.  a high tower or spire-shaped pillar of rock or coral, alone or cresting a summit</rdfs:comment>
@@ -500,15 +527,15 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A15">
-    <rdf:first rdf:nodeID="A16"/>
-    <rdf:rest rdf:nodeID="A13"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#concession-area">
     <rdfs:comment xml:lang="en">concession area.  a lease of land by a government for economic development, e.g., mining, forestry</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <swrl:arguments rdf:nodeID="A22"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#streams">
     <rdfs:comment xml:lang="en">streams.  bodies of running water moving to a lower level in a channel on land</rdfs:comment>
@@ -519,10 +546,9 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#description">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A17">
-    <swrl:argument1 rdf:resource="urn:swrl#x"/>
-    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SurtHemisphere"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+  <rdf:Description rdf:nodeID="A23">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mound">
     <rdfs:comment xml:lang="en">mound.  a low, isolated, rounded hill</rdfs:comment>
@@ -554,10 +580,6 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A18">
-    <owl:members rdf:nodeID="A19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
     <rdfs:comment xml:lang="en">This ontology is designed to model any geographical area.</rdfs:comment>
   </rdf:Description>
@@ -568,9 +590,6 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:comment xml:lang="en">adminCode4</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A20">
-    <ontologyofspatialobject:license>http://purl.org/NET/rdflicense/allrightsreserved</ontologyofspatialobject:license>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#GeonameConcept">
     <rdfs:comment xml:lang="en">Geoname Concept</rdfs:comment>
@@ -587,15 +606,14 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#PopulatedPlace"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:nodeID="A23"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#islet">
     <rdfs:comment xml:lang="en">islet.  small island, bigger than rock, smaller than island.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A21">
-    <rdf:first rdf:nodeID="A17"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#trail">
     <rdfs:comment xml:lang="en">trail.  a path, track, or route used by pedestrians, animals, or off-road vehicles</rdfs:comment>
@@ -606,10 +624,6 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:comment xml:lang="en">sugar plantation.  an estate that specializes in growing sugar cane</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A19">
-    <rdf:rest rdf:nodeID="A22"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName3"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#customs-house">
     <rdfs:comment xml:lang="en">customs house.  a building in a port where customs and duties are paid, and where vessels are entered and cleared</rdfs:comment>
@@ -675,6 +689,10 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <owl:members rdf:nodeID="A26"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#corridor">
     <rdfs:comment xml:lang="en">corridor.  a strip or area of land having significance as an access way</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
@@ -694,14 +712,22 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <rdf:rest rdf:nodeID="A28"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <rdf:rest rdf:nodeID="A30"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#idOSM"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:rest rdf:nodeID="A31"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#name"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#military-installation">
     <rdfs:comment xml:lang="en">military installation.  a facility for use of and control by armed forces</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A22">
-    <rdf:rest rdf:nodeID="A23"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osmDataProperty">
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -719,11 +745,6 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:comment xml:lang="en">arctic land.  a tract of land in the Arctic</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A24">
-    <swrl:body rdf:nodeID="A15"/>
-    <swrl:head rdf:nodeID="A21"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#beach">
     <rdfs:comment xml:lang="en">beach.  a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves</rdfs:comment>
@@ -751,6 +772,14 @@ http://esri.github.io/geometry-api-java/doc/Touches.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <rdf:rest rdf:nodeID="A20"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <owl:members rdf:nodeID="A27"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#terrace">
     <rdfs:comment xml:lang="en">terrace.  a relatively flat horizontal or gently inclined surface, sometimes long and narrow, which is bounded by a steeper ascending slope on one side and by a steep descending slope on the opposite side</rdfs:comment>
     <rdfs:comment xml:lang="en">terrace.  a long, narrow alluvial platform bounded by steeper slopes above and below, usually overlooking a waterbody</rdfs:comment>
@@ -775,13 +804,9 @@ http://esri.github.io/geometry-api-java/doc/Crosses.html</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A23">
-    <rdf:rest rdf:nodeID="A25"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rank"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A26">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="urn:swrl#latitudx"/>
+  <rdf:Description rdf:nodeID="A33">
+    <rdf:rest rdf:nodeID="A34"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#typeRelation"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ford">
     <rdfs:comment xml:lang="en">ford.  a shallow part of a stream which can be crossed on foot or by land vehicle</rdfs:comment>
@@ -810,6 +835,10 @@ http://esri.github.io/geometry-api-java/doc/Crosses.html</rdfs:comment>
     <rdfs:comment xml:lang="en">community center.  a facility for community recreation and other activities</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <rdf:rest rdf:nodeID="A36"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#continentCode"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#triangulation-station">
     <rdfs:comment xml:lang="en">triangulation station.  a point on the earth whose position has been determined by triangulation</rdfs:comment>
@@ -852,14 +881,14 @@ http://esri.github.io/geometry-api-java/doc/Crosses.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A27">
-    <rdf:rest rdf:nodeID="A26"/>
-    <rdf:first rdf:resource="urn:swrl#latitudy"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#promenade">
     <rdfs:comment xml:lang="en">promenade.  a place for public walking, usually along a beach front</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Road"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <rdf:rest rdf:nodeID="A33"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#taqs"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#building-s-">
     <rdfs:comment xml:lang="en">building(s).  a structure built for permanent use, as a house, factory, etc.</rdfs:comment>
@@ -886,6 +915,10 @@ http://esri.github.io/geometry-api-java/doc/Crosses.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:rest rdf:nodeID="A38"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureCodeName"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pond">
     <rdfs:comment xml:lang="en">pond.  a small standing waterbody</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
@@ -895,6 +928,13 @@ http://esri.github.io/geometry-api-java/doc/Crosses.html</rdfs:comment>
     <rdfs:comment xml:lang="en">wall.  a thick masonry structure, usually enclosing a field or building, or forming the side of a structure</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <rdf:rest rdf:nodeID="A29"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#countryCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <ontologyofspatialobject:license>http://purl.org/NET/rdflicense/allrightsreserved</ontologyofspatialobject:license>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gully">
     <rdfs:comment xml:lang="en">gully.  a small valley-like feature</rdfs:comment>
@@ -931,26 +971,24 @@ http://esri.github.io/geometry-api-java/doc/Crosses.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <swrl:body rdf:nodeID="A41"/>
+    <swrl:head rdf:nodeID="A42"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hole">
     <rdfs:comment xml:lang="en">hole.  a small depression of the sea floor</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <rdf:rest rdf:nodeID="A37"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boundingBox"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ridge">
     <rdfs:comment xml:lang="en">ridge.  a long narrow elevation with steep sides</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A28">
-    <swrl:arguments rdf:nodeID="A27"/>
-    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A29">
-    <swrl:argument1 rdf:resource="urn:swrl#y"/>
-    <swrl:argument2 rdf:resource="urn:swrl#latitudy"/>
-    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation">
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -966,6 +1004,10 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdfs:comment xml:lang="en">blowhole(s).  a hole in coastal rock through which sea water is forced by a rising tide or waves and spurted through an outlet into the air</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:rest rdf:nodeID="A44"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName2"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sub-surface-dam">
     <rdfs:comment xml:lang="en">sub-surface dam.  a dam put down to bedrock in a sand river</rdfs:comment>
@@ -990,10 +1032,6 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A30">
-    <owl:members rdf:nodeID="A31"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#road-cut">
     <rdfs:comment xml:lang="en">road cut.  an excavation cut through a hill or ridge for a road</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Road"/>
@@ -1007,10 +1045,6 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A32">
-    <rdf:rest rdf:nodeID="A33"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#population"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#navigation-canal-s-">
     <rdfs:comment xml:lang="en">navigation canal(s).  a watercourse constructed for navigation of vessels</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
@@ -1021,30 +1055,28 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A34">
-    <rdf:rest rdf:nodeID="A35"/>
-    <rdf:first rdf:nodeID="A29"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boulder-field">
     <rdfs:comment xml:lang="en">boulder field.  a high altitude or high latitude bare, flat area covered with large angular rocks</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A35">
-    <rdf:first rdf:nodeID="A28"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#section-of-intermittent-stream">
     <rdfs:comment xml:lang="en">section of intermittent stream.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A45">
+    <rdf:rest rdf:nodeID="A43"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#caldera">
     <rdfs:comment xml:lang="en">caldera.  a depression measuring kilometers across formed by the collapse of a volcanic mountain</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <rdf:rest rdf:nodeID="A35"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#alternateNames"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#inspection-station">
     <rdfs:comment xml:lang="en">inspection station.  a station at which vehicles, goods, and people are inspected</rdfs:comment>
@@ -1055,11 +1087,6 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdfs:comment xml:lang="en">irrigation system.  a network of ditches and one or more of the following elements: water supply, reservoir, canal, pump, well, drain, etc.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A5">
-    <rdf:rest rdf:nodeID="A34"/>
-    <rdf:first rdf:nodeID="A36"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#airfield">
     <rdfs:comment xml:lang="en">airfield.   no facilities provided for the commercial handling of passengers and cargo"</rdfs:comment>
@@ -1104,10 +1131,6 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A31">
-    <rdf:rest rdf:nodeID="A37"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#geoNameId">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gonameDataProperty"/>
@@ -1120,10 +1143,6 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdfs:comment xml:lang="en">abandoned watercourse.  a former stream or distributary no longer carrying flowing water, but still evident due to lakes, wetland, topographic or vegetation patterns</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A33">
-    <rdf:rest rdf:nodeID="A38"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#typeRelation"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mine-s-">
     <rdfs:comment xml:lang="en">mine(s).  a site where mineral ores are extracted from the ground by excavating surface pits and subterranean passages</rdfs:comment>
@@ -1140,17 +1159,15 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A36">
-    <swrl:argument1 rdf:resource="urn:swrl#x"/>
-    <swrl:argument2 rdf:resource="urn:swrl#latitudx"/>
-    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bight-s-">
     <rdfs:comment xml:lang="en">bight(s).  an open body of water forming a slight recession in a coastline</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Natural-watercourses"/>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <rdf:rest rdf:nodeID="A45"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode5"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#semi-independent-political-entity">
     <rdfs:comment xml:lang="en">semi-independent political entity.  </rdfs:comment>
@@ -1167,6 +1184,10 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A47">
+    <rdf:rest rdf:nodeID="A48"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode3"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#shoal-s-">
     <rdfs:comment xml:lang="en">shoal(s).  a surface-navigation hazard composed of unconsolidated material</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
@@ -1176,23 +1197,24 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#natural"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A49">
+    <swrl:argument1 rdf:resource="urn:swrl#x"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A50">
+    <rdf:rest rdf:nodeID="A51"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#salt-lake">
     <rdfs:comment xml:lang="en">salt lake.  an inland body of salt water with no outlet</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A39">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fjord">
     <rdfs:comment xml:lang="en">fjord.  a long, narrow, steep-walled, deep-water arm of the sea at high latitudes, usually along mountainous coasts</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A40">
-    <rdf:rest rdf:nodeID="A41"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#contains">
     <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#topological"/>
@@ -1212,10 +1234,6 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:comment xml:lang="en">ponds.  small standing waterbodies</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A42">
-    <rdf:rest rdf:nodeID="A43"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#volcano">
     <rdfs:comment xml:lang="en">volcano.  a conical elevation composed of volcanic materials with a crater at the top</rdfs:comment>
@@ -1257,19 +1275,32 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A52">
+    <rdf:rest rdf:nodeID="A53"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#style"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A54">
+    <swrl:arguments rdf:nodeID="A55"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cave-s-">
     <rdfs:comment xml:lang="en">cave(s).  an underground passageway or chamber, or cavity on the side of a cliff</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A48">
+    <rdf:rest rdf:nodeID="A46"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode4"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#storehouse">
     <rdfs:comment xml:lang="en">storehouse.  a building for storing goods, especially provisions</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A44">
-    <rdf:rest rdf:nodeID="A39"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl"/>
+  <rdf:Description rdf:nodeID="A30">
+    <rdf:rest rdf:nodeID="A50"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#arch">
     <rdfs:comment xml:lang="en">arch.  a natural or man-made structure in the form of an arch</rdfs:comment>
@@ -1288,18 +1319,19 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A43">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A45">
-    <rdf:rest rdf:nodeID="A40"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#thumbnailImg"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-railroad-stop">
     <rdfs:comment xml:lang="en">abandoned railroad stop.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <rdf:rest rdf:nodeID="A52"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rank"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A56">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#narrows">
     <rdfs:comment xml:lang="en">narrows.  a navigable narrow part of a bay, strait, river, etc.</rdfs:comment>
@@ -1311,14 +1343,19 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A55">
+    <rdf:rest rdf:nodeID="A57"/>
+    <rdf:first rdf:resource="urn:swrl#latitud"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A58">
+    <rdf:rest rdf:nodeID="A59"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#breakwater">
     <rdfs:comment xml:lang="en">breakwater.  a structure erected to break the force of waves at the entrance to a harbor or port</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A46">
-    <rdf:rest rdf:nodeID="A47"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#observation-point">
     <rdfs:comment xml:lang="en">observation point.  a wildlife or scenic observation point</rdfs:comment>
@@ -1340,18 +1377,14 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A48">
-    <rdf:rest rdf:nodeID="A49"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName4"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A50">
-    <rdf:rest rdf:nodeID="A45"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#taqs"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#populated-place">
     <rdfs:comment xml:lang="en">populated place.  a city, town, village, or other agglomeration of buildings where people live and work</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#PopulatedPlace"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A60">
+    <owl:members rdf:nodeID="A58"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#munitions-plant">
     <rdfs:comment xml:lang="en">munitions plant.  a factory where ammunition is made</rdfs:comment>
@@ -1382,14 +1415,19 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A51">
-    <owl:members rdf:nodeID="A48"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-palm-plantation">
     <rdfs:comment xml:lang="en">oil palm plantation.  an estate specializing in the cultivation of oil palm trees</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A59">
+    <rdf:rest rdf:nodeID="A47"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A57">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#administrative">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boundary"/>
@@ -1405,10 +1443,6 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A47">
-    <rdf:rest rdf:nodeID="A42"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#longitude"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tunnels">
     <rdfs:comment xml:lang="en">tunnels.  subterranean passageways for transportation</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Road"/>
@@ -1418,10 +1452,6 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:comment xml:lang="en">delta.  a flat plain formed by alluvial deposits at the mouth of a stream</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A52">
-    <rdf:rest rdf:nodeID="A50"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#summary"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#current">
     <rdfs:comment xml:lang="en">current.  a horizontal flow of water in a given direction with uniform velocity</rdfs:comment>
@@ -1479,10 +1509,6 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A53">
-    <rdf:rest rdf:nodeID="A52"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#style"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pan">
     <rdfs:comment xml:lang="en">pan.  a near-level shallow, natural depression or basin, usually containing an intermittent lake, pond, or pool</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
@@ -1513,9 +1539,9 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A54">
-    <rdf:rest rdf:nodeID="A55"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
+  <rdf:Description rdf:nodeID="A61">
+    <rdf:rest rdf:nodeID="A62"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seat-of-a-fourth-order-administrative-division">
     <rdfs:comment xml:lang="en">seat of a fourth-order administrative division.  </rdfs:comment>
@@ -1527,14 +1553,6 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#natural"/>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#GeonameConcept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A56">
-    <rdf:rest rdf:nodeID="A46"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#geoNameId"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A57">
-    <rdf:rest rdf:nodeID="A53"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rank"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#grazing-area">
     <rdfs:comment xml:lang="en">grazing area.  an area of grasses and shrubs used for grazing</rdfs:comment>
@@ -1559,9 +1577,9 @@ http://esri.github.io/geometry-api-java/doc/Contains.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A58">
-    <rdf:rest rdf:nodeID="A54"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language"/>
+  <rdf:Description rdf:nodeID="A63">
+    <rdf:rest rdf:nodeID="A61"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#thumbnailImg"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sugar-mill">
     <rdfs:comment xml:lang="en">sugar mill.  a facility where sugar cane is processed into raw sugar</rdfs:comment>
@@ -1608,11 +1626,6 @@ http://esri.github.io/geometry-api-java/doc/Intersects.html (There is a conceptu
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A59">
-    <swrl:body rdf:nodeID="A60"/>
-    <swrl:head rdf:nodeID="A61"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#business-center">
     <rdfs:comment xml:lang="en">business center.  a place where a number of businesses are located</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
@@ -1628,10 +1641,6 @@ http://esri.github.io/geometry-api-java/doc/Intersects.html (There is a conceptu
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A62">
-    <rdf:rest rdf:nodeID="A44"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hanging-valley">
     <rdfs:comment xml:lang="en">hanging valley.   most common in areas that have been glaciated"</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
@@ -1646,6 +1655,10 @@ http://esri.github.io/geometry-api-java/doc/Intersects.html (There is a conceptu
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A64">
+    <rdf:rest rdf:nodeID="A63"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#taqs"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaDataProperty">
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     <rdfs:domain rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
@@ -1656,10 +1669,6 @@ http://esri.github.io/geometry-api-java/doc/Intersects.html (There is a conceptu
     <rdfs:comment xml:lang="en">police post.  a building in which police are stationed</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A63">
-    <rdf:rest rdf:nodeID="A64"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#type"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#restaurant">
     <rdfs:comment xml:lang="en">restaurant.  A place where meals are served to the public</rdfs:comment>
@@ -1708,6 +1717,11 @@ http://esri.github.io/geometry-api-java/doc/Intersects.html (There is a conceptu
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#GeonameConcept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A65">
+    <rdf:first rdf:nodeID="A49"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#overlap">
     <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#topological"/>
     <rdfs:range rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
@@ -1735,14 +1749,14 @@ http://esri.github.io/geometry-api-java/doc/Overlaps.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A25">
-    <rdf:rest rdf:nodeID="A62"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#thumbnailImg"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reformatory">
     <rdfs:comment xml:lang="en">reformatory.  a facility for confining, training, and reforming young law offenders</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A53">
+    <rdf:rest rdf:nodeID="A64"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#summary"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#glacier-s-">
     <rdfs:comment xml:lang="en">glacier(s).  a mass of ice, usually at high latitudes or high elevations, with sufficient thickness to flow away from the source area in lobes, tongues, or masses</rdfs:comment>
@@ -1755,14 +1769,14 @@ http://esri.github.io/geometry-api-java/doc/Overlaps.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A41">
-    <rdf:rest rdf:nodeID="A63"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#title"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#headwaters">
     <rdfs:comment xml:lang="en">headwaters.  the source and upper part of a stream, including the upper drainage basin</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A66">
+    <rdf:rest rdf:nodeID="A24"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#typeRelation"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oxbow-lake">
     <rdfs:comment xml:lang="en">oxbow lake.  a crescent-shaped lake commonly found adjacent to meandering streams</rdfs:comment>
@@ -1785,15 +1799,6 @@ http://esri.github.io/geometry-api-java/doc/Overlaps.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A65">
-    <rdf:rest rdf:nodeID="A66"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A16">
-    <swrl:arguments rdf:nodeID="A67"/>
-    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#cape">
     <rdfs:comment xml:lang="en">cape.  a land area, more prominent than a point, projecting into the sea and marking a notable change in coastal direction</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
@@ -1803,6 +1808,11 @@ http://esri.github.io/geometry-api-java/doc/Overlaps.html</rdfs:comment>
     <rdfs:comment xml:lang="en">section of stream.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A67">
+    <swrl:argument1 rdf:resource="urn:swrl#x"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spa">
     <rdfs:comment xml:lang="en">spa.  a resort area usually developed around a medicinal spring</rdfs:comment>
@@ -1859,11 +1869,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A67">
-    <rdf:rest rdf:nodeID="A68"/>
-    <rdf:first rdf:resource="urn:swrl#latitud"/>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#countryName">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gonameDataProperty"/>
@@ -1876,10 +1881,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment xml:lang="en">homestead.  a residence, owner's or manager's, on a sheep or cattle station, woolshed, outcamp, or Aboriginal outstation, specific to Australia and New Zealand</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A64">
-    <rdf:rest rdf:nodeID="A65"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#typeRelation"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#forest-s-">
     <rdfs:comment xml:lang="en">forest(s).  an area dominated by tree vegetation</rdfs:comment>
@@ -1896,34 +1897,15 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A68">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#transit-terminal">
     <rdfs:comment xml:lang="en">transit terminal.  facilities for the handling of vehicular freight and passengers</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A14">
-    <rdf:first rdf:nodeID="A69"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A70">
-    <swrl:argument1 rdf:resource="urn:swrl#x"/>
-    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#area">
     <rdfs:comment xml:lang="en">area.  a tract of land without homogeneous character or boundaries</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A71">
-    <owl:members rdf:nodeID="A72"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mound-s-">
     <rdfs:comment xml:lang="en">mound(s).  a low, isolated, rounded hill</rdfs:comment>
@@ -1992,20 +1974,11 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A69">
-    <swrl:argument1 rdf:resource="urn:swrl#x"/>
-    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#bays">
     <rdfs:comment xml:lang="en">bays.  coastal indentations between two capes or headlands, larger than a cove but smaller than a gulf</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Natural-watercourses"/>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A66">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#territory">
     <rdfs:comment xml:lang="en">territory.  </rdfs:comment>
@@ -2071,16 +2044,19 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A73">
-    <swrl:argument1 rdf:resource="urn:swrl#y"/>
-    <swrl:argument2 rdf:resource="urn:swrl#x"/>
-    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isNorthOf"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+  <rdf:Description rdf:nodeID="A68">
+    <swrl:body rdf:nodeID="A69"/>
+    <swrl:head rdf:nodeID="A70"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#buffer-zone">
     <rdfs:comment xml:lang="en">buffer zone.  a zone recognized as a buffer between two nations in which military presence is minimal or absent</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#AdministrativeBoundary"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A71">
+    <rdf:rest rdf:nodeID="A72"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#port">
     <rdfs:comment xml:lang="en">port.  a place provided with terminal and transfer facilities for loading and discharging waterborne cargo or passengers, usually located in a harbor</rdfs:comment>
@@ -2098,13 +2074,13 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A73">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="A74">
     <rdf:rest rdf:nodeID="A75"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A76">
-    <rdf:rest rdf:nodeID="A77"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#alternateNames"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dune-s-">
     <rdfs:comment xml:lang="en">dune(s).  a wave form, ridge or star shape feature composed of sand</rdfs:comment>
@@ -2121,27 +2097,23 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A78">
-    <rdf:rest rdf:nodeID="A79"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#landing">
     <rdfs:comment xml:lang="en">landing.  a place where boats receive or discharge passengers and freight, but lacking most port facilities</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A72">
-    <rdf:rest rdf:nodeID="A74"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName5"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#slope">
     <rdfs:comment xml:lang="en">slope.  the slope seaward from the shelf edge to the beginning of a continental rise or the point where there is a general reduction in slope</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A80">
-    <rdf:rest rdf:nodeID="A4"/>
-    <rdf:first rdf:nodeID="A70"/>
+  <rdf:Description rdf:nodeID="A72">
+    <rdf:rest rdf:nodeID="A76"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rank"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A70">
+    <rdf:first rdf:nodeID="A77"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
     <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lock-s-">
@@ -2154,22 +2126,14 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A49">
-    <rdf:rest rdf:nodeID="A76"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A79">
-    <rdf:rest rdf:nodeID="A81"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName2"/>
+  <rdf:Description rdf:nodeID="A78">
+    <owl:members rdf:nodeID="A74"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intermittent-lake">
     <rdfs:comment xml:lang="en">intermittent lake.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A82">
-    <rdf:rest rdf:nodeID="A78"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode5"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#peak">
     <rdfs:comment xml:lang="en">peak.  a prominent elevation, part of a larger feature, either pointed or of very limited extent across the summit</rdfs:comment>
@@ -2184,9 +2148,11 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#AdministrativeBoundary"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A83">
-    <rdf:rest rdf:nodeID="A84"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
+  <rdf:Description rdf:nodeID="A77">
+    <swrl:argument1 rdf:resource="urn:swrl#y"/>
+    <swrl:argument2 rdf:resource="urn:swrl#x"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isNorthOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sinkhole">
     <rdfs:comment xml:lang="en">sinkhole.  a small crater-shape depression in a karst area</rdfs:comment>
@@ -2203,10 +2169,9 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Road"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A85">
-    <swrl:body rdf:nodeID="A80"/>
-    <swrl:head rdf:nodeID="A86"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+  <rdf:Description rdf:nodeID="A79">
+    <owl:members rdf:nodeID="A80"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#city">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#PopulatedPlace"/>
@@ -2216,9 +2181,9 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#place"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A87">
-    <rdf:rest rdf:nodeID="A88"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#title"/>
+  <rdf:Description rdf:nodeID="A81">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#automatic-teller-machine">
     <rdfs:comment xml:lang="en">automatic teller machine.  An unattended electronic machine in a public place, connected to a data system and related equipment and activated by a bank customer to obtain cash withdrawals and other banking services.</rdfs:comment>
@@ -2230,10 +2195,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A3">
-    <rdf:rest rdf:nodeID="A82"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode4"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#valley">
     <rdfs:comment xml:lang="en">valley.  an elongated depression usually traversed by a stream</rdfs:comment>
     <rdfs:comment xml:lang="en">valley.  a relatively shallow, wide depression, the bottom of which usually has a continuous gradient</rdfs:comment>
@@ -2241,9 +2202,14 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A75">
-    <rdf:rest rdf:nodeID="A83"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language"/>
+  <rdf:Description rdf:nodeID="A69">
+    <rdf:rest rdf:nodeID="A82"/>
+    <rdf:first rdf:nodeID="A67"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A80">
+    <rdf:rest rdf:nodeID="A71"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName3"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seat-of-a-first-order-administrative-division">
     <rdfs:comment xml:lang="en">seat of a first-order administrative division.  seat of a first-order administrative division (PPLC takes precedence over PPLA)</rdfs:comment>
@@ -2254,11 +2220,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment xml:lang="en">marsh(es).  a wetland dominated by grass-like vegetation</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A86">
-    <rdf:first rdf:nodeID="A73"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#points">
     <rdfs:comment xml:lang="en">points.  tapering pieces of land projecting into a body of water, less prominent than a cape</rdfs:comment>
@@ -2278,9 +2239,9 @@ Sera utilizado tambien por OSM</rdfs:comment>
   <rdf:Description rdf:about="urn:swrl#latitudy">
     <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A77">
-    <rdf:rest rdf:nodeID="A87"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone"/>
+  <rdf:Description rdf:nodeID="A51">
+    <rdf:rest rdf:nodeID="A81"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#longitude"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-mine">
     <rdfs:comment xml:lang="en">abandoned mine.  </rdfs:comment>
@@ -2299,6 +2260,10 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment>Es utilizada por Geonames, OSM y por Wikipedia</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A83">
+    <rdf:rest rdf:nodeID="A84"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SurtHemisphere">
     <rdfs:comment xml:lang="en">Surt Hemisphere</rdfs:comment>
@@ -2328,10 +2293,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A89">
-    <rdf:rest rdf:nodeID="A90"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#feature"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pier">
     <rdfs:comment xml:lang="en">pier.  a structure built out into navigable water on piles providing berthing for ships and recreation</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -2357,11 +2318,19 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A85">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#irrigation-ditch">
     <rdfs:comment xml:lang="en">irrigation ditch.  a ditch which serves to distribute irrigation water</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Man-made-waterways"/>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A86">
+    <rdf:rest rdf:nodeID="A87"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode1"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#satellite-station">
     <rdfs:comment xml:lang="en">satellite station.  a facility for tracking and communicating with orbiting satellites</rdfs:comment>
@@ -2385,6 +2354,10 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment xml:lang="en">university prep school.  University Preparation Schools &amp; Institutions</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A84">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#artillery-range">
     <rdfs:comment xml:lang="en">artillery range.  a tract of land used for artillery firing practice</rdfs:comment>
@@ -2421,10 +2394,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A90">
-    <rdf:rest rdf:nodeID="A91"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureClass"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName4">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gonameDataProperty"/>
@@ -2452,6 +2421,18 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment xml:lang="en">wildlife reserve.  a tract of public land reserved for the preservation of wildlife</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A88">
+    <rdf:rest rdf:nodeID="A85"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A87">
+    <rdf:rest rdf:nodeID="A89"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A90">
+    <owl:members rdf:nodeID="A91"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#camp-s-">
     <rdfs:comment xml:lang="en">camp(s).  a site occupied by tents, huts, or other shelters for temporary use</rdfs:comment>
@@ -2481,10 +2462,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#village">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#place"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A91">
-    <rdf:rest rdf:nodeID="A92"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureClassName"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#astronomical-station">
     <rdfs:comment xml:lang="en">astronomical station.  a point on the earth whose position has been determined by observations of celestial bodies</rdfs:comment>
@@ -2516,6 +2493,14 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A89">
+    <rdf:rest rdf:nodeID="A92"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A93">
+    <rdf:rest rdf:nodeID="A88"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#longitude"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#temp-work-office">
     <rdfs:comment xml:lang="en">temp work office.  Temporary Work Offices</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -2525,6 +2510,10 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment xml:lang="en">hospital.  a building in which sick or injured, especially those confined to bed, are medically treated</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A91">
+    <rdf:rest rdf:nodeID="A94"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName5"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gravel-area">
     <rdfs:comment xml:lang="en">gravel area.  an area covered with gravel</rdfs:comment>
@@ -2541,14 +2530,18 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A92">
+  <rdf:Description rdf:nodeID="A95">
     <rdf:rest rdf:nodeID="A93"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureCodeName"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mangrove-island">
     <rdfs:comment xml:lang="en">mangrove island.  a mangrove swamp surrounded by a waterbody</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A92">
+    <rdf:rest rdf:nodeID="A96"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode4"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oil-camp">
     <rdfs:comment xml:lang="en">oil camp.  a camp used by oilfield workers</rdfs:comment>
@@ -2583,10 +2576,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A37">
-    <rdf:rest rdf:nodeID="A94"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode2"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#flat">
     <rdfs:comment xml:lang="en">flat.  a small level or nearly level area</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
@@ -2602,6 +2591,10 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment xml:lang="en">palace.  a large stately house, often a royal or presidential residence</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A94">
+    <rdf:rest rdf:nodeID="A97"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mining-camp">
     <rdfs:comment xml:lang="en">mining camp.  a camp used by miners</rdfs:comment>
@@ -2619,17 +2612,17 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="A38">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A94">
     <rdf:rest rdf:nodeID="A95"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode3"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#geoNameId"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tourism">
     <rdfs:comment xml:lang="en">This is used to map places and things of specific interest to tourists. For example these may be places to see, places to stay and things and places providing support. See the page titled Tourism("http://wiki.openstreetmap.org/wiki/Tourism") for an introduction on its usage. </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A97">
+    <rdf:rest rdf:nodeID="A98"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#phosphate-works">
     <rdfs:comment xml:lang="en">phosphate works.  a facility for producing fertilizer</rdfs:comment>
@@ -2676,14 +2669,19 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#AdministrativeBoundary"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A75">
+    <rdf:rest rdf:nodeID="A99"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boundingBox"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#radio-station">
     <rdfs:comment xml:lang="en">radio station.  a facility for producing and transmitting information by radio waves</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A96">
-    <owl:members rdf:nodeID="A97"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+  <rdf:Description rdf:nodeID="A42">
+    <rdf:first rdf:nodeID="A100"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pyramid">
     <rdfs:comment xml:lang="en">pyramid.  an ancient massive structure of square ground plan with four triangular faces meeting at a point and used for enclosing tombs</rdfs:comment>
@@ -2694,11 +2692,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment xml:lang="en">street.  a paved urban thoroughfare</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Road"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A98">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#oilfield">
     <rdfs:comment xml:lang="en">oilfield.  an area containing a subterranean store of petroleum of economic value</rdfs:comment>
@@ -2732,9 +2725,9 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A95">
-    <rdf:rest rdf:nodeID="A99"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode4"/>
+  <rdf:Description rdf:nodeID="A98">
+    <rdf:rest rdf:nodeID="A101"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gold-mine-s-">
     <rdfs:comment xml:lang="en">gold mine(s).  a mine where gold ore, or alluvial gold is extracted</rdfs:comment>
@@ -2778,6 +2771,10 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A99">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reservation">
     <rdfs:comment xml:lang="en">reservation.  a tract of land set aside for aboriginal, tribal, or native populations</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
@@ -2792,10 +2789,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment xml:lang="en">pool(s).   or a small body of standing water"</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A97">
-    <rdf:rest rdf:nodeID="A100"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#countryName"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#escarpment">
     <rdfs:comment xml:lang="en">escarpment.  a long line of cliffs or steep slopes separating level surfaces above and below</rdfs:comment>
@@ -2845,10 +2838,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A99">
-    <rdf:rest rdf:nodeID="A101"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode5"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#park">
     <rdfs:comment xml:lang="en">park.  an area, often of forested land, maintained as a place of beauty, or for recreation</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
@@ -2869,6 +2858,10 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A102">
+    <owl:members rdf:nodeID="A86"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boundingBox">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#name"/>
@@ -2882,10 +2875,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment xml:lang="en">knoll.  an elevation rising generally more than 500 meters and less than 1,000 meters and of limited extent across the summit</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A100">
-    <rdf:rest rdf:nodeID="A89"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#proximity">
     <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spatial"/>
@@ -2924,9 +2913,10 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#AdministrativeBoundary"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A55">
-    <rdf:rest rdf:nodeID="A102"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#longitude"/>
+  <rdf:Description rdf:nodeID="A103">
+    <rdf:first rdf:nodeID="A104"/>
+    <rdf:rest rdf:nodeID="A105"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wreck">
     <rdfs:comment xml:lang="en">wreck.  the site of the remains of a wrecked vessel</rdfs:comment>
@@ -2967,18 +2957,17 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A103">
-    <swrl:argument1 rdf:resource="urn:swrl#x"/>
-    <swrl:argument2 rdf:resource="urn:swrl#latitud"/>
-    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#AdministrativeBoundary">
     <rdfs:comment xml:lang="en">Administrative Boundary</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boundary"/>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#GeonameConcept"/>
     <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#administrative"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A105">
+    <rdf:first rdf:nodeID="A106"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#castle">
     <rdfs:comment xml:lang="en">castle.  a large fortified building or set of buildings</rdfs:comment>
@@ -3005,10 +2994,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A102">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#reef-s-">
     <rdfs:comment xml:lang="en">reef(s).  a surface-navigation hazard composed of consolidated material</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
@@ -3031,10 +3016,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A104">
-    <rdf:rest rdf:nodeID="A56"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureCodeName"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#agricultural-reserve">
     <rdfs:comment xml:lang="en">agricultural reserve.  a tract of land reserved for agricultural reclamation and/or development</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
@@ -3050,11 +3031,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A105">
-    <swrl:argument1 rdf:resource="urn:swrl#x"/>
-    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#tree-s-">
     <rdfs:comment xml:lang="en">tree(s).  a conspicuous tree used as a landmark</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Vegetation"/>
@@ -3065,24 +3041,20 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A106">
-    <rdf:rest rdf:nodeID="A98"/>
-    <rdf:first rdf:resource="urn:swrl#latitud"/>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#stream-bend">
     <rdfs:comment xml:lang="en">stream bend.  a conspicuously curved or bent segment of a stream</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A107">
-    <owl:members rdf:nodeID="A108"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seat-of-a-third-order-administrative-division">
     <rdfs:comment xml:lang="en">seat of a third-order administrative division.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#PopulatedPlace"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A100">
+    <swrl:argument1 rdf:resource="urn:swrl#x"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#NortHemisphere"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#market">
     <rdfs:comment xml:lang="en">market.  a place where goods are bought and sold at regular intervals</rdfs:comment>
@@ -3167,14 +3139,10 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A109">
-    <swrl:arguments rdf:nodeID="A106"/>
-    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A108">
-    <rdf:rest rdf:nodeID="A8"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#alternateNames"/>
+  <rdf:Description rdf:nodeID="A41">
+    <rdf:first rdf:nodeID="A107"/>
+    <rdf:rest rdf:nodeID="A103"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject">
     <rdfs:comment xml:lang="en">Spatial Object</rdfs:comment>
@@ -3235,10 +3203,19 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A107">
+    <swrl:arguments rdf:nodeID="A108"/>
+    <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pine-grove">
     <rdfs:comment xml:lang="en">pine grove.  a planting of pine trees</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Vegetation"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A96">
+    <rdf:rest rdf:nodeID="A109"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode5"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fan-s-">
     <rdfs:comment xml:lang="en">fan(s).  a fan-shaped wedge of coarse alluvium with apex merging with a mountain stream bed and the fan spreading out at a low angle slope onto an adjacent plain</rdfs:comment>
@@ -3255,14 +3232,6 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A110">
-    <rdf:rest rdf:nodeID="A111"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A111">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#library">
     <rdfs:comment xml:lang="en">library.  A place in which information resources such as books are kept for reading, reference, or lending.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -3273,10 +3242,9 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A60">
-    <rdf:first rdf:nodeID="A109"/>
-    <rdf:rest rdf:nodeID="A112"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+  <rdf:Description rdf:nodeID="A110">
+    <rdf:rest rdf:nodeID="A111"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rockfall">
     <rdfs:comment xml:lang="en">rockfall.  an irregular mass of fallen rock at the base of a cliff or steep slope</rdfs:comment>
@@ -3331,19 +3299,19 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A109">
+    <rdf:rest rdf:nodeID="A112"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#convent">
     <rdfs:comment xml:lang="en">convent.  a building where a community of nuns lives in seclusion</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A88">
-    <rdf:rest rdf:nodeID="A110"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#typeRelation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A113">
-    <swrl:argument1 rdf:resource="urn:swrl#x"/>
-    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#NortHemisphere"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+  <rdf:Description rdf:nodeID="A108">
+    <rdf:rest rdf:nodeID="A56"/>
+    <rdf:first rdf:resource="urn:swrl#latitud"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-first-order-administrative-division">
     <rdfs:comment xml:lang="en">historical first-order administrative division.  a former first-order administrative division</rdfs:comment>
@@ -3354,6 +3322,16 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:comment xml:lang="en">prison.  a facility for confining prisoners</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A113">
+    <rdf:rest rdf:nodeID="A110"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A114">
+    <swrl:argument1 rdf:resource="urn:swrl#y"/>
+    <swrl:argument2 rdf:resource="urn:swrl#latitudy"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#anabranch">
     <rdfs:comment xml:lang="en">anabranch.  a diverging branch flowing out of a main stream and rejoining it downstream</rdfs:comment>
@@ -3395,6 +3373,10 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A112">
+    <rdf:rest rdf:nodeID="A115"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName2"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#beacon">
     <rdfs:comment xml:lang="en">beacon.  a fixed artificial navigation mark</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -3405,19 +3387,24 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A114">
-    <rdf:first rdf:nodeID="A105"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:nodeID="A106">
+    <swrl:argument1 rdf:resource="urn:swrl#x"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <rdf:rest rdf:nodeID="A116"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A117">
+    <rdf:rest rdf:nodeID="A17"/>
+    <rdf:first rdf:nodeID="A114"/>
     <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#veterinary-facility">
     <rdfs:comment xml:lang="en">veterinary facility.  a building or camp at which veterinary services are available</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A115">
-    <rdf:rest rdf:nodeID="A104"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#featureCode"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#well">
     <rdfs:comment xml:lang="en">well.  a cylindrical hole, pit, or tunnel drilled or dug down to a depth from which water, oil, or gas can be pumped or brought to the surface</rdfs:comment>
@@ -3496,15 +3483,24 @@ Sera utilizado tambien por OSM</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A116">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A104">
+    <swrl:argument1 rdf:resource="urn:swrl#x"/>
+    <swrl:argument2 rdf:resource="urn:swrl#latitud"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dock-s-">
     <rdfs:comment xml:lang="en">dock(s).  a waterway between two piers, or cut into the land for the berthing of ships</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A112">
-    <rdf:first rdf:nodeID="A103"/>
-    <rdf:rest rdf:nodeID="A114"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+  <rdf:Description rdf:nodeID="A111">
+    <rdf:rest rdf:nodeID="A66"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#title"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#disjoint">
     <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#intersects"/>
@@ -3536,9 +3532,11 @@ http://esri.github.io/geometry-api-java/doc/Disjoint.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A116">
-    <owl:members rdf:nodeID="A115"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+  <rdf:Description rdf:nodeID="A118">
+    <swrl:argument1 rdf:resource="urn:swrl#x"/>
+    <swrl:argument2 rdf:resource="urn:swrl#latitudx"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#fourth-order-administrative-division">
     <rdfs:comment xml:lang="en">fourth-order administrative division.  a subdivision of a third-order administrative division</rdfs:comment>
@@ -3564,10 +3562,6 @@ http://esri.github.io/geometry-api-java/doc/Disjoint.html</rdfs:comment>
     <rdfs:comment xml:lang="en">mesa.  an isolated, extensive, flat-topped elevation on the shelf, with relatively steep sides</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A117">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mission">
     <rdfs:comment xml:lang="en">mission.  a place characterized by dwellings, school, church, hospital and other facilities operated by a religious group for the purpose of providing charitable services and to propagate religion</rdfs:comment>
@@ -3598,15 +3592,32 @@ http://esri.github.io/geometry-api-java/doc/Disjoint.html</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A119">
+    <rdf:rest rdf:nodeID="A120"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName4"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#sulphur-spring-s-">
     <rdfs:comment xml:lang="en">sulphur spring(s).  a place where sulphur ground water flows naturally out of the ground</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A121">
+    <swrl:argument1 rdf:resource="urn:swrl#y"/>
+    <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#leper-colony">
     <rdfs:comment xml:lang="en">leper colony.  a settled area inhabited by lepers in relative isolation</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A122">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A123">
+    <rdf:rest rdf:nodeID="A124"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rank"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#islands">
     <rdfs:comment xml:lang="en">islands.  tracts of land, smaller than a continent, surrounded by water at high water</rdfs:comment>
@@ -3648,9 +3659,9 @@ http://esri.github.io/geometry-api-java/doc/Disjoint.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A118">
-    <rdf:rest rdf:nodeID="A117"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl"/>
+  <rdf:Description rdf:nodeID="A115">
+    <rdf:rest rdf:nodeID="A119"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName3"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#peaks">
     <rdfs:comment xml:lang="en">peaks.  prominent elevations, part of a larger feature, either pointed or of very limited extent across the summit</rdfs:comment>
@@ -3678,6 +3689,10 @@ http://esri.github.io/geometry-api-java/doc/Disjoint.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A125">
+    <owl:members rdf:nodeID="A126"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#type">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#osmDataProperty"/>
@@ -3685,6 +3700,17 @@ http://esri.github.io/geometry-api-java/doc/Disjoint.html</rdfs:comment>
     <rdfs:comment xml:lang="es">Para saber si es un Nodo, una Relacion o una Camino (Way)</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A127">
+    <rdf:rest rdf:nodeID="A117"/>
+    <rdf:first rdf:nodeID="A118"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A128">
+    <swrl:argument1 rdf:resource="urn:swrl#x"/>
+    <swrl:argument2 rdf:resource="urn:swrl#latitud"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#latitude"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-populated-place">
     <rdfs:comment xml:lang="en">abandoned populated place.  </rdfs:comment>
@@ -3695,6 +3721,10 @@ http://esri.github.io/geometry-api-java/doc/Disjoint.html</rdfs:comment>
     <rdfs:comment xml:lang="en">office building.  commercial building where business and/or services are conducted</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A101">
+    <rdf:rest rdf:nodeID="A123"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#longitude"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#scrubland">
     <rdfs:comment xml:lang="en">scrubland.  an area of low trees, bushes, and shrubs stunted by some environmental limitation</rdfs:comment>
@@ -3729,15 +3759,32 @@ http://esri.github.io/geometry-api-java/doc/Disjoint.html</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A126">
+    <rdf:rest rdf:nodeID="A129"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName4"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#windmill">
     <rdfs:comment xml:lang="en">windmill.  a mill or water pump powered by wind</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A130">
+    <rdf:rest rdf:nodeID="A131"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#railroad-junction">
     <rdfs:comment xml:lang="en">railroad junction.  a place where two or more railroad tracks join</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Road"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A132">
+    <rdf:rest rdf:nodeID="A133"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#thumbnailImg"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A134">
+    <rdf:rest rdf:nodeID="A65"/>
+    <rdf:first rdf:nodeID="A128"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#copper-works">
     <rdfs:comment xml:lang="en">copper works.  a facility for processing copper ore</rdfs:comment>
@@ -3790,6 +3837,11 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A82">
+    <rdf:rest rdf:nodeID="A127"/>
+    <rdf:first rdf:nodeID="A121"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#land-tied-island">
     <rdfs:comment xml:lang="en">land-tied island.  a coastal island connected to the mainland by barrier beaches, levees or dikes</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
@@ -3800,15 +3852,23 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Road"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A61">
-    <rdf:first rdf:nodeID="A113"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dam">
     <rdfs:comment xml:lang="en">dam.  a barrier constructed across a stream to impound water</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A129">
+    <rdf:rest rdf:nodeID="A113"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#elevation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A120">
+    <rdf:rest rdf:nodeID="A130"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:first rdf:nodeID="A54"/>
+    <rdf:rest rdf:nodeID="A134"/>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#housing-development">
     <rdfs:comment xml:lang="en">housing development.  a tract of land on which many houses of similar design are built according to a development plan</rdfs:comment>
@@ -3819,6 +3879,10 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:comment xml:lang="en">section of peninsula.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A124">
+    <rdf:rest rdf:nodeID="A132"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#summary"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#town">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#place"/>
@@ -3879,10 +3943,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A119">
-    <rdf:rest rdf:nodeID="A120"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rank"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#geyser">
     <rdfs:comment xml:lang="en">geyser.  a type of hot spring with intermittent eruptions of jets of hot water and steam</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
@@ -3913,10 +3973,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A121">
-    <rdf:rest rdf:nodeID="A122"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName4"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#clearing">
     <rdfs:comment xml:lang="en">clearing.  an area in a forest with trees removed</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
@@ -3928,14 +3984,14 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A135">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wkt"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wells">
     <rdfs:comment xml:lang="en">wells.  cylindrical holes, pits, or tunnels drilled or dug down to a depth from which water, oil, or gas can be pumped or brought to the surface</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A123">
-    <rdf:rest rdf:nodeID="A124"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode3"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-factory">
     <rdfs:comment xml:lang="en">abandoned factory.  </rdfs:comment>
@@ -3951,10 +4007,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:comment xml:lang="en">mill(s).  a building housing machines for transforming, shaping, finishing, grinding, or extracting products</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A84">
-    <rdf:rest rdf:nodeID="A119"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#longitude"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#route">
     <rdfs:comment xml:lang="en">This is used to describe routes of all different kinds. See the page titled Relation:route("http://wiki.openstreetmap.org/wiki/Relation:route") for an introduction on its usage.</rdfs:comment>
@@ -3999,18 +4051,14 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A81">
-    <rdf:rest rdf:nodeID="A121"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName3"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-site">
     <rdfs:comment xml:lang="en">historical site.  a place of historical importance</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A125">
-    <rdf:rest rdf:nodeID="A123"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode2"/>
+  <rdf:Description rdf:nodeID="A133">
+    <rdf:rest rdf:nodeID="A135"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spillway">
     <rdfs:comment xml:lang="en">spillway.  a passage or outlet through which surplus water flows over, around or through a dam</rdfs:comment>
@@ -4068,18 +4116,10 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A126">
-    <rdf:rest rdf:nodeID="A118"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#thumbnailImg"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#israeli-settlement">
     <rdfs:comment xml:lang="en">israeli settlement.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#PopulatedPlace"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A127">
-    <rdf:rest rdf:nodeID="A32"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#rock-desert">
     <rdfs:comment xml:lang="en">rock desert.  a relatively sand-free, high bedrock plateau in a hot desert, with or without a gravel veneer</rdfs:comment>
@@ -4103,9 +4143,9 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A128">
-    <rdf:rest rdf:nodeID="A125"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode1"/>
+  <rdf:Description rdf:nodeID="A76">
+    <rdf:rest rdf:nodeID="A136"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#thumbnailImg"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#forest-reserve">
     <rdfs:comment xml:lang="en">forest reserve.  a forested area set aside for preservation or controlled use</rdfs:comment>
@@ -4121,6 +4161,10 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:comment xml:lang="en">customs post.  a building at an international boundary where customs and duties are paid on goods</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A137">
+    <rdf:rest rdf:nodeID="A122"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#wikipediaUrl"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#isWholeOf">
     <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#mereological"/>
@@ -4152,10 +4196,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A120">
-    <rdf:rest rdf:nodeID="A126"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#summary"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#underground-irrigation-canal-s-">
     <rdfs:comment xml:lang="en">underground irrigation canal(s).  a gently inclined underground tunnel bringing water for irrigation from aquifers</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
@@ -4165,10 +4205,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:comment xml:lang="en">religious populated place.  a populated place whose population is largely engaged in religious occupations</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#PopulatedPlace"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A122">
-    <rdf:rest rdf:nodeID="A127"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName5"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#gorge-s-">
     <rdfs:comment xml:lang="en">gorge(s).  a short, narrow, steep-sided section of a stream valley</rdfs:comment>
@@ -4188,14 +4224,14 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#GeonameConcept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A136">
+    <rdf:rest rdf:nodeID="A137"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#timezone"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#nature-reserve">
     <rdfs:comment xml:lang="en">nature reserve.  an area reserved for the maintenance of a natural habitat</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Area"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A129">
-    <owl:members rdf:nodeID="A128"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#post-office">
     <rdfs:comment xml:lang="en">post office.  a public building in which mail is received, sorted and distributed</rdfs:comment>
@@ -4206,10 +4242,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:comment xml:lang="en">railroad station.  a facility comprising ticket office, platforms, etc. for loading and unloading train passengers and freight</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A130">
-    <rdf:rest rdf:nodeID="A131"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#boundingBox"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#patrol-post">
     <rdfs:comment xml:lang="en">patrol post.  a post from which patrols are sent out</rdfs:comment>
@@ -4227,10 +4259,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#aerodrome"/>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A132">
-    <rdf:rest rdf:nodeID="A133"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName2"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#historical-third-order-administrative-division">
     <rdfs:comment xml:lang="en">historical third-order administrative division.  a former third-order administrative division</rdfs:comment>
@@ -4260,10 +4288,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A134">
-    <rdf:rest rdf:nodeID="A130"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#lakes">
     <rdfs:comment xml:lang="en">lakes.  large inland bodies of standing water</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
@@ -4279,18 +4303,10 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A101">
-    <rdf:rest rdf:nodeID="A132"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminName1"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#caravan-route">
     <rdfs:comment xml:lang="en">caravan route.  the route taken by caravans</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Road"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A135">
-    <rdf:rest rdf:nodeID="A136"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#countryCode"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#dairy">
     <rdfs:comment xml:lang="en">dairy.  a facility for the processing, sale and distribution of milk or milk products</rdfs:comment>
@@ -4334,10 +4350,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A137">
-    <rdf:rest rdf:nodeID="A134"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode5"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#seat-of-government-of-a-political-entity">
     <rdfs:comment xml:lang="en">seat of government of a political entity.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#PopulatedPlace"/>
@@ -4372,14 +4384,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:comment xml:lang="en">second-order administrative division.  a subdivision of a first-order administrative division</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#AdministrativeBoundary"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A138">
-    <rdf:rest rdf:nodeID="A135"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#continentCode"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A124">
-    <rdf:rest rdf:nodeID="A137"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#adminCode4"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#topological">
     <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#spatial"/>
@@ -4429,10 +4433,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#SpatialObject"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A133">
-    <rdf:rest rdf:nodeID="A138"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#alternateNames"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#amphitheater">
     <rdfs:comment xml:lang="en">amphitheater.  an oval or circular structure with rising tiers of seats about a stage or open space</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -4457,10 +4457,6 @@ Es utilizado por Geoanmes y la fuente "Base de Datos", para el nombre de cada ob
     <rdfs:comment xml:lang="en">bog(s).  a wetland characterized by peat forming sphagnum moss, sedge, and other acid-water plants</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A139">
-    <rdf:rest rdf:nodeID="A57"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#name"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hermitage">
     <rdfs:comment xml:lang="en">hermitage.  a secluded residence, usually for religious sects</rdfs:comment>
@@ -4509,6 +4505,14 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A138">
+    <rdf:rest rdf:nodeID="A73"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#typeRelation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A62">
+    <rdf:rest rdf:nodeID="A139"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#title"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#traffic-circle">
     <rdfs:comment xml:lang="en">traffic circle.  a road junction formed around a central circle about which traffic moves in one direction only</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -4544,18 +4548,10 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A93">
-    <rdf:rest rdf:nodeID="A139"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#language"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-canal">
     <rdfs:comment xml:lang="en">abandoned canal.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hydrographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A136">
-    <rdf:rest rdf:nodeID="A58"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#idOSM"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#opera-house">
     <rdfs:comment xml:lang="en">opera house.  A theater designed chiefly for the performance of operas.</rdfs:comment>
@@ -4602,6 +4598,10 @@ Ejemplo tabla empresas y tabla trabajadores. Imaginen que los trabajadores estan
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A131">
+    <rdf:rest rdf:nodeID="A138"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#population"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#hut">
     <rdfs:comment xml:lang="en">hut.  a small primitive house</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -4611,10 +4611,6 @@ Ejemplo tabla empresas y tabla trabajadores. Imaginen que los trabajadores estan
     <rdfs:comment xml:lang="en">section of plateau.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Hypsographic"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A140">
-    <rdf:rest rdf:nodeID="A11"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#typeRelation"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#pyramids">
     <rdfs:comment xml:lang="en">pyramids.  ancient massive structures of square ground plan with four triangular faces meeting at a point and used for enclosing tombs</rdfs:comment>
@@ -4671,6 +4667,10 @@ Ejemplo tabla empresas y tabla trabajadores. Imaginen que los trabajadores estan
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Undersea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A140">
+    <rdf:rest rdf:nodeID="A83"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#typeRelation"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#abandoned-mission">
     <rdfs:comment xml:lang="en">abandoned mission.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#Spot"/>
@@ -4698,10 +4698,6 @@ Ejemplo tabla empresas y tabla trabajadores. Imaginen que los trabajadores estan
     <rdfs:comment xml:lang="en">featureCode</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A131">
-    <rdf:rest rdf:nodeID="A140"/>
-    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#taqs"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#school">
     <rdfs:comment xml:lang="en">school.  building(s) where instruction in one or more branches of knowledge takes place</rdfs:comment>
@@ -4732,6 +4728,10 @@ Ejemplo tabla empresas y tabla trabajadores. Imaginen que los trabajadores estan
     <rdfs:comment xml:lang="en">dependent political entity.  </rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#AdministrativeBoundary"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A139">
+    <rdf:rest rdf:nodeID="A140"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#type"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#ancient-site">
     <rdfs:comment xml:lang="en">ancient site.  a place where archeological remains, old structures, or cultural artifacts are located</rdfs:comment>
