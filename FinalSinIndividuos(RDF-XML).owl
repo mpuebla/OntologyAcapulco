@@ -954,7 +954,6 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <!-- http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#AdministrativeBoundary -->
 
     <owl:Class rdf:about="&ontologyofspatialobject;AdministrativeBoundary">
-        <owl:equivalentClass rdf:resource="&ontologyofspatialobject;administrative"/>
         <rdfs:subClassOf rdf:resource="&ontologyofspatialobject;GeonameConcept"/>
         <rdfs:subClassOf rdf:resource="&ontologyofspatialobject;boundary"/>
         <rdfs:comment xml:lang="en">Administrative Boundary</rdfs:comment>
@@ -1287,14 +1286,6 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#administrative -->
-
-    <owl:Class rdf:about="&ontologyofspatialobject;administrative">
-        <rdfs:subClassOf rdf:resource="&ontologyofspatialobject;boundary"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#administrative-division -->
 
     <owl:Class rdf:about="&ontologyofspatialobject;administrative-division">
@@ -1511,15 +1502,6 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <owl:Class rdf:about="&ontologyofspatialobject;arctic-land">
         <rdfs:subClassOf rdf:resource="&ontologyofspatialobject;Area"/>
         <rdfs:comment xml:lang="en">arctic land.  a tract of land in the Arctic</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#area -->
-
-    <owl:Class rdf:about="&ontologyofspatialobject;area">
-        <rdfs:subClassOf rdf:resource="&ontologyofspatialobject;Area"/>
-        <rdfs:comment xml:lang="en">area.  a tract of land without homogeneous character or boundaries</rdfs:comment>
     </owl:Class>
     
 
@@ -5599,15 +5581,6 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#road -->
-
-    <owl:Class rdf:about="&ontologyofspatialobject;road">
-        <rdfs:subClassOf rdf:resource="&ontologyofspatialobject;Road"/>
-        <rdfs:comment xml:lang="en">road.  an open way with improved surface for transportation of animals, people and vehicles</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mpuebla/ontologies/2015/8/OntologyOfSpatialObject#road-bend -->
 
     <owl:Class rdf:about="&ontologyofspatialobject;road-bend">
@@ -7267,38 +7240,36 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
             <rdf:Description rdf:about="&ontologyofspatialobject;adminCode5"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;adminName1"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;adminName2"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminName3"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminName4"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminName5"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;language"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;population"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;typeRelation"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;wkt"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminName5"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;elevation"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;alternateNames"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;continentCode"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;countryCode"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;idOSM"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;language"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;latitude"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;longitude"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;rank"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;summary"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;thumbnailImg"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;wikipediaUrl"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;wkt"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;timezone"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminName3"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;countryName"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;elevation"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;feature"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;featureClass"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;featureClassName"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;featureCodeName"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;language"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;name"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;rank"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;style"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;summary"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;taqs"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;thumbnailImg"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;timezone"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;title"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;type"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;typeRelation"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;wikipediaUrl"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;wkt"/>
         </owl:members>
@@ -7309,26 +7280,6 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
             <rdf:Description rdf:about="&ontologyofspatialobject;alternateNames"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;boundingBox"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;elevation"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminCode1"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminCode2"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminCode3"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminCode4"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminCode5"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminName1"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;adminName2"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;alternateNames"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;continentCode"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;countryCode"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;idOSM"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;language"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;latitude"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;longitude"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;timezone"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -7352,10 +7303,13 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
             <rdf:Description rdf:about="&ontologyofspatialobject;adminCode4"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;adminCode5"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;adminName1"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;boundingBox"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;taqs"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminName2"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminName3"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminName4"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminName5"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;language"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;population"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;typeRelation"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;wikipediaUrl"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;wkt"/>
         </owl:members>
     </rdf:Description>
@@ -7375,23 +7329,42 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&ontologyofspatialobject;countryName"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;elevation"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;feature"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;featureClass"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;featureClassName"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;featureCodeName"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;language"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;name"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;rank"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;style"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;summary"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminCode1"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminCode2"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminCode3"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminCode4"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminCode5"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminName1"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;boundingBox"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;taqs"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;typeRelation"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;wikipediaUrl"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;wkt"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminName5"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;elevation"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;language"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;latitude"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;longitude"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;rank"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;summary"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;thumbnailImg"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;wikipediaUrl"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;wkt"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ontologyofspatialobject;adminName3"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;elevation"/>
+            <rdf:Description rdf:about="&ontologyofspatialobject;rank"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;thumbnailImg"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;timezone"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;title"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;type"/>
-            <rdf:Description rdf:about="&ontologyofspatialobject;typeRelation"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;wikipediaUrl"/>
             <rdf:Description rdf:about="&ontologyofspatialobject;wkt"/>
         </owl:members>
@@ -7493,82 +7466,9 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
         <swrl:body>
             <rdf:Description>
                 <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
-                        <swrl:builtin rdf:resource="&swrlb;lessThan"/>
-                        <swrl:arguments>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&rdf;List"/>
-                                <rdf:first rdf:resource="urn:swrl#latitud"/>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="&rdf;List"/>
-                                        <rdf:first rdf:datatype="&xsd;integer">0</rdf:first>
-                                        <rdf:rest rdf:resource="&rdf;nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </swrl:arguments>
-                    </rdf:Description>
-                </rdf:first>
                 <rdf:rest>
                     <rdf:Description>
                         <rdf:type rdf:resource="&swrl;AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="&ontologyofspatialobject;latitude"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#latitud"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&swrl;AtomList"/>
-                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="&ontologyofspatialobject;SpatialObject"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="&ontologyofspatialobject;SurtHemisphere"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&swrl;Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="&ontologyofspatialobject;SpatialObject"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                            </rdf:Description>
-                        </rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -7583,6 +7483,14 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&ontologyofspatialobject;latitude"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#latitudy"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
                                         <rdf:rest>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -7599,18 +7507,17 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
                                                 </rdf:first>
                                             </rdf:Description>
                                         </rdf:rest>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="&ontologyofspatialobject;latitude"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#latitudy"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
-                                            </rdf:Description>
-                                        </rdf:first>
                                     </rdf:Description>
                                 </rdf:rest>
                             </rdf:Description>
                         </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&ontologyofspatialobject;SpatialObject"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
                     </rdf:Description>
                 </rdf:rest>
                 <rdf:first>
@@ -7632,6 +7539,72 @@ Es utilizada por Geonames y por Wikipedia</rdfs:comment>
                         <swrl:propertyPredicate rdf:resource="&ontologyofspatialobject;isNorthOf"/>
                         <swrl:argument2 rdf:resource="urn:swrl#x"/>
                         <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&ontologyofspatialobject;SpatialObject"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&ontologyofspatialobject;latitude"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#latitud"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="&swrlb;lessThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:resource="urn:swrl#latitud"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first rdf:datatype="&xsd;integer">0</rdf:first>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&ontologyofspatialobject;SurtHemisphere"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
                     </rdf:Description>
                 </rdf:first>
             </rdf:Description>
